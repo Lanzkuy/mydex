@@ -1,0 +1,206 @@
+/*---MOBILE---*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+:root {
+    --off-white: #FAF9F6;
+
+    --primary-color-10: #E96B80;
+    --primary-color-30: #E23A56;
+    --primary-color-50: #DB092C;
+    --primary-color-70: #AF0723;
+    --primary-color-90: #83051A;
+
+    --secondary-color-10: #85CCE6;
+    --secondary-color-30: #5CBBDE;
+    --secondary-color-50: #33AAD6;
+    --secondary-color-70: #2988AB;
+    --secondary-color-90: #1F6680;
+
+    --neutral-color-10: #C5C4C2;
+    --neutral-color-30: #999997;
+    --neutral-color-50: #6E6D6C;
+    --neutral-color-70: #424140;
+    --neutral-color-90: #161615;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-center-h {
+    text-align: center;
+}
+
+.text-center-v {
+    align-self: center;
+}
+
+.mall {
+    margin: 1rem;
+}
+
+.mtop {
+    margin-top: 1rem;
+}
+
+.mbot {
+    margin-bottom: 1rem;
+}
+
+.mleft {
+    margin-left: 1rem;
+}
+
+.mright {
+    margin-right: 1rem;
+}
+
+.pall {
+    padding: 1rem;
+}
+
+.ptop {
+    padding-top: 1rem;
+}
+
+.pbot {
+    padding-bottom: 1rem;
+}
+
+.pleft {
+    padding-left: 1rem;
+}
+
+.pright {
+    padding-right: 1rem;
+}
+
+.icon {
+    background: url(../images/Pokedex\ Logo.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 2.8rem;
+    width: 2.8rem;
+}
+
+.navbar {
+    align-items: center;
+    background-color: var(--off-white);
+    border-bottom: 5px solid var(--secondary-color-50);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 10%;
+    position: relative;
+}
+
+.navbar .brand {
+    cursor: pointer;
+    color: var(--neutral-color-90);
+    display: grid;
+    font-size: 1rem;
+    font-weight: 600; 
+    grid-template-columns: auto auto;
+    padding-inline: 1rem;
+    width: fit-content;
+}
+
+.navbar .navigation {
+    background-color: var(--off-white);
+    color: var(--neutral-color-90);
+    font-size: 1rem;
+    font-weight: 400;
+    list-style: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: -100%;
+    transition: all 500ms linear;
+}
+
+.navbar .navigation.active {
+    display: block;
+    top: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .navigation li {
+    padding: 1rem;
+}
+
+.menu-toggle {
+    display: grid;
+    justify-content: right;
+    padding-inline: 1rem;
+}
+
+.bar {
+    background-color: var(--neutral-color-90);
+    display: block;
+    height: 2px;
+    margin: 4px auto;
+    width: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) { 
+    .navbar {
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        padding-inline: 10%;
+    }
+
+    .navbar .brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar .navigation {
+        display: grid;
+        font-size: 1.2rem;
+        font-weight: 600;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+        position: static;
+        text-align: right;
+    }
+
+    .navbar .navigation.active {
+        box-shadow: none;
+        display: grid;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .brand-active {
+        border-bottom: 5px solid var(--primary-color-70);
+        padding-bottom: 5px;
+    }
+    
+    .brand-not-active {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    .brand-not-active:hover {
+        border-bottom: 5px solid var(--primary-color-10);
+        padding-bottom: 5px;
+    }
+}
