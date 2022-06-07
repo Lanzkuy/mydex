@@ -44,6 +44,18 @@ img {
     max-width: 100%;
 }
 
+.text-regular {
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-bolder {
+    font-weight: 800;
+}
+
 .text-center-h {
     text-align: center;
 }
@@ -108,7 +120,8 @@ img {
     display: grid;
     grid-template-columns: auto auto;
     height: 10%;
-    position: relative;
+    top: 0;
+    position: sticky;
 }
 
 .navbar .brand {
@@ -116,7 +129,6 @@ img {
     color: var(--neutral-color-90);
     display: grid;
     font-size: 1rem;
-    font-weight: 600; 
     grid-template-columns: auto auto;
     padding-inline: 1rem;
     width: fit-content;
@@ -133,13 +145,26 @@ img {
     right: 0;
     text-align: center;
     top: -100%;
-    transition: all 500ms linear;
+    /* transition: all 500ms ease-out; */
 }
 
 .navbar .navigation.active {
     display: block;
     top: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    animation: burgerAnimation 0.3s ease;
+}
+
+@keyframes burgerAnimation {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 216px;
+    }
 }
 
 .navbar .navigation li {
@@ -160,11 +185,13 @@ img {
     width: 1.5rem;
 }
 
+/*---DESKTOP---*/
 @media only screen and (min-width: 768px) { 
     .navbar {
         align-items: center;
         grid-template-columns: 1fr 2fr;
         padding-inline: 10%;
+        position: relative;
     }
 
     .navbar .brand {
