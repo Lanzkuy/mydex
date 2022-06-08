@@ -1,0 +1,8 @@
+.title {
+    background-color: var(--off-white);
+    border: 5px solid var(--secondary-color-50);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}

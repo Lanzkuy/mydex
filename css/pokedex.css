@@ -1,66 +1,37 @@
-.full-container {
-    background-color: darkgrey;
-    display: grid;
-    height: auto;
-}
-
-.container{
-    float: left;
-    display: grid;
-    grid-template-columns: 100fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fit);
-    list-style: none;
-    margin-left: 3.5rem;
-}
-
-.pokedex-char{
-    float: left;
-    width: 15%;
+/*---MOBILE---*/
+.title {
     background-color: var(--off-white);
-    border: 4px solid var(--secondary-color-50);
-    border-radius: 1rem;
-    padding-bottom: 5px;
-    margin-left: 3.5rem;
-    margin-bottom: 2.5rem;
-    text-shadow: 5px 1px 5px grey;
+    border: 5px solid var(--secondary-color-50);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 .content{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    height: 100%;
+    overflow: auto;
+    margin-block: 1rem;
+}
+
+.content .pokedex-item {
+    background-color: var(--off-white);
+    border: 5px solid var(--secondary-color-50);
+    border-radius: 0.5rem;
     text-align: center;
-    background-color: var(--primary-color-50);
-    margin: 0rem 9.5rem 0rem 9.5rem;
-    height: auto;
 }
 
-.content-header-box{
-    text-align: center;
-    margin: auto;
-    margin-top: 2rem;
-    padding: 8px 5rem 8px 5rem;
-    background-color: white;
-    border: 4px solid var(--secondary-color-50);
-    border-radius: 10px;
-    width: 90%;
+.content .pokedex-item .item-image {
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.3));
+    height: clamp(5rem, 20vh, 10rem);
+    padding: 1rem;
 }
 
-.content-header-text{
-    text-shadow: 2px 1px 5px grey;
-    font-size: 35px;
-}
-
-.content-body-row{
-    margin: auto;
-    margin-top: 2rem;
-    width: 100%;
-    height: 50px;
-}
-
-.list-pokedex{
-    list-style: none;
-}
-
-.pokedex-image{
-    padding: auto;
-    padding-top: 20px;
-    width: 80%;
+.content .pokedex-item span {
+    color: var(--neutral-color-50);
+    display: block;
+    padding-block: 0.5rem;
 }

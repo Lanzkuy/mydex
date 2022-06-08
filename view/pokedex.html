@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,17 @@
     <link rel="stylesheet" href="../css/pokedex.css">
     <title>MyDex - Pokedex</title>
 </head>
-
 <body>
     <nav class="navbar">
         <div class="brand">
             <span class="icon"></span>
-            <h1 class="text-center-v mleft">MYDEX</h1>
+            <h1 class="align-center mleft">MYDEX</h1>
         </div>
         <ul class="navigation">
             <li><a class="brand-not-active" href="home.html">HOME</a></li>
             <li><a class="brand-active" href="pokedex.html">POKEDEX</a></li>
             <li><a class="brand-not-active" href="#">ABILITY</a></li>
-            <li><a class="brand-not-active" href="#">MOVES</a></li>
+            <li><a class="brand-not-active" href="moves.html">MOVES</a></li>
         </ul>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -26,57 +26,98 @@
             <span class="bar"></span>
         </div>
     </nav>
-    <main class="full-container">
-        <div class="content">
-            <div class="content-header-box">
-                <p class="content-header-text">POKEDEX</p>
+    <main class="container">
+        <div class="title">
+            <h2>POKÉDEX</h2>
+        </div>
+        <div class="content text-bolder">
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/bulbasaur.png">
+                <span>Bulbasaur</span>
             </div>
-            <div class="content-body-row">
-                <div>
-                    <ul class="container">
-                        <li>
-                            <div class="pokedex-char" style="margin-left: 0%;"><img class="pokedex-image" src="../images/bulbasaur.png">Bulbasaur</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/ivysaur.png" style="width: 78%">Ivysaur</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/venusaur.png" style="width: 97%">Venusaur</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/charmander.png" style="width: 75%">Charmander</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/charmeleon.png" style="width: 75%">Charmelon</div>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="container">
-                        <li>
-                            <div class="pokedex-char" style="margin-left: 0%;"><img class="pokedex-image" src="../images/charizard.png" style="margin-bottom: 1.5rem">Charizad</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/squirtle.png" style="width: 71%">Squirtle</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/wartortle.png" style="width: 70%">Wartortle</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/blastoise.png" style="width: 71%">Blastoise</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/caterpie.png" style="width: 73%">Caterpie</div>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="container">
-                        <li>
-                            <div class="pokedex-char" style="margin-left: 0%;"><img class="pokedex-image" src="../images/metapod.png" style="width: 60%;">Metapod</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/butterfree.png">Butterfree</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/weedle.png" style="width: 56%"><p>Weedle</p></div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/kakuna.png" style="width: 47%"><p>Kakuna</p></div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/beedrill.png" style="width: 74%">Beedril</div>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="container">
-                        <li>
-                            <div class="pokedex-char" style="margin-left: 0%;"><img class="pokedex-image" src="../images/pidgey.png" style="width: 67%">Pidgey</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/pidgeotto.png" style="width: 72%">Pidgeotto</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/pidgeot.png" style="width: 67%">Pidgeot</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/rattata.png">Rattata</div>
-                            <div class="pokedex-char"><img class="pokedex-image" src="../images/raticate.png" style="width: 71%">Raticate</div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/ivysaur.png">
+                <span>Ivysaur</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/venusaur.png">
+                <span>Venusaur</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/charmander.png">
+                <span>Charmander</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/charmeleon.png">
+                <span>Charmeleon</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/charizard.png">
+                <span>Charizard</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/squirtle.png">
+                <span>Squirtle</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/wartortle.png">
+                <span>Wartortle</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/blastoise.png">
+                <span>Blastoise</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/caterpie.png">
+                <span>Caterpie</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/metapod.png">
+                <span>Metapod</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/butterfree.png">
+                <span>Butterfree</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/weedle.png">
+                <span>Weedle</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/kakuna.png">
+                <span>Kakuna</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/beedrill.png">
+                <span>Beedril</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/pidgey.png">
+                <span>Pidgey</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/pidgeotto.png">
+                <span>Pidgeotto</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/pidgeot.png">
+                <span>Pidgeot</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/rattata.png">
+                <span>Rattata</span>
+            </div>
+            <div class="pokedex-item">
+                <img class="item-image" src="../images/raticate.png">
+                <span>Raticate</span>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <i class='bx bxl-facebook-square bx-sm'></i>
+        <i class='bx bxl-instagram-alt bx-sm' ></i>
+        <i class='bx bxl-linkedin-square bx-sm' ></i>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
+</html>
