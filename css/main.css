@@ -36,6 +36,8 @@ html, body {
     font-size: 1rem;
     min-height: 100%;
     height: 100%;
+    overflow: auto;
+    z-index: -1;
 }
 
 a {
@@ -122,6 +124,7 @@ img {
     height: 10%;
     top: 0;
     position: sticky;
+    z-index: 2;
 }
 
 .navbar .brand {
@@ -211,6 +214,7 @@ img {
     padding-block: 0.5rem;
     padding-inline: 10%;
     place-content: center;
+    place-items: center;
     position: relative;
 }
 
@@ -220,8 +224,7 @@ img {
     min-height: 85%;
     padding: 1rem;
     position: relative;
-    overflow: auto;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*---MOBILE TABLE---*/
@@ -359,12 +362,12 @@ img {
     
     .table thead {
         display: table-header-group;
-        font-size: clamp(0.5rem, 2vw, 1.2rem);
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
     }
 
     .table tbody {
         display: table-row-group;
-        font-size: 0.8rem;
+        font-size: clamp(0.8rem, 2vw, 1rem);
     }
     
     .table, .table tbody, .table tr, .table td {

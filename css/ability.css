@@ -6,3 +6,47 @@
     padding: 0.5rem 1rem;
     text-align: center;
 }
+
+.table {
+    background-color: var(--off-white);
+    display: table;
+}
+
+.table th {
+    background-color: var(--secondary-color-50);
+    padding: 1rem 0.5rem;
+}
+
+.table tr {
+    display: table-row;
+}
+
+.table tr:nth-child(odd) {
+    background-color: var(--secondary-color-10);
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--secondary-color-30);
+}
+
+.table td {
+    display: table-cell;
+}   
+
+.table td:before {
+    content: none;
+}
+
+.table thead {
+    display: table-header-group;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.table tbody {
+    display: table-row-group;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.table, .table tbody, .table tr, .table td {
+    text-align: center;
+}
